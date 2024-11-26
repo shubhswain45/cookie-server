@@ -19,7 +19,7 @@ app.get('/set-cookie', (req, res) => {
     res.cookie('dummyCookie', 'cookieValue123', {
         httpOnly: true,
         secure: true, // Ensures the cookie is sent only over HTTPS
-        sameSite: 'none', // Allows cross-origin cookies
+        sameSite: 'None', // Allows cross-origin cookies
         path: '/',
     });
     res.send({ message: 'Cookie has been set!' });
