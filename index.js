@@ -12,7 +12,7 @@ app.use(cors({ origin: 'https://cookie-client.vercel.app', credentials: true }))
 app.get('/set-cookie', (req, res) => {
     res.cookie('dummyCookie', 'cookieValue123', { httpOnly: true, path: '/' });
     res.send({ message: 'Cookie has been set!' });
-});
+});         
 
 const PORT = 4000;
 app.listen(PORT, () => {
